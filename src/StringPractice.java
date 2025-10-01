@@ -1,5 +1,6 @@
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class StringPractice {
   public static void main(String[] args) {
@@ -26,14 +27,23 @@ public class StringPractice {
       System.out.println(character);
     }
     // Create an ArrayList of Strings and assign it to a variable
-    ArrayList
+    List<String> stringList = new ArrayList<>();
     // Add multiple strings to the List (OK to do one-by-one)
-
+    stringList.add("TH");
+    stringList.add("LIFE LIVE LOVE");
+    stringList.add("Live laugh love actually");
     // Join all of the strings in the list together into a single string separated by commas
     // Use a built-in method to achieve this instead of using a loop
-
+    System.out.println("Joined String! " + String.join(", " + stringList));
     // Check whether two strings are equal
-
+    String string1 = "Who";
+    String string2 = "Who";
+    if (string1 == string2){
+      System.out.println("Equal");
+    }
+    else {
+      System.out.println("Not equal");
+    }
     /*
      * Reminder!
      * 
