@@ -37,9 +37,14 @@ public class MapPractice {
       System.out.println(key);
     }
     // Iterate over the values of the map, printing each value
-
+    for (Integer value : userScores.values()) {
+      System.out.println(value);
+    }
     // Iterate over the entries in the map, printing each key and value
-
+    for (String k : userScores.keySet()){
+      int defOfPair = userScores.get(k);
+      System.out.println(k + " " + defOfPair);
+    }
     /*
      * Usage tip!
      * 
