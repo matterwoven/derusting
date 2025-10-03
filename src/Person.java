@@ -4,6 +4,9 @@
  */
 
 public class Person {
+
+    public Person(String jeff, int par) {
+    }
   // Declare a public String instance variable for the name of the person
   // Declare a private int instance variable for the age of the person
   public String NameOfPerson;
@@ -12,8 +15,8 @@ public class Person {
   // Create a constructor that takes the name and age of the person
   // and assigns it to the instance variables
   public void PersonConstructor(String name, int age) {
-    NameOfPerson = name;
-    AgeOfPerson = age;
+    this.NameOfPerson = name;
+    this.AgeOfPerson = age;
   }
 
   // Create a toString method that gives the name and age of the person
@@ -41,22 +44,22 @@ public class Person {
 
   public static void main(String[] args) {
     // Create an instance of Person
-    
+    Person person1 = new Person("Jeff", 26);
     // Create another instance of Person with a different name and age and
     // assign it to a different variable
-
+    Person person2 = new Person("Chelsea", 36);
     // Print the first person
-
+    System.out.println(person1);
     // Print the second person
-
+    System.out.println(person2);
     // Get the name of the first person and store it in a local variable
-
+    Person storedPerson = person1;
     // Using the birthYear method, get the birth year of the first person
     // and store it in a local variable. Input the actual current year (e.g. 2025)
     // as the argument.
-
+    int birthdateOfPerson = person1.birthYear(2025);
     // In a separate statement, print the local variable holding the birth year.
-
+    System.out.println(birthdateOfPerson);
     /**
      * Terminology!
      * 
